@@ -150,15 +150,3 @@ if __name__ == "__main__":
         for url in url_list:
             executor.submit(download, url)
 
-#    #  List failed
-#    if url_list is None:
-#        print("Listing image page url is failed.")
-#        exit(1)
-#    
-#    # Make directory
-#    makedir(url_list[0])
-#
-#    # Download image
-#    executor2 = concurrent.futures.ThreadPoolExecutor(max_workers=100)
-#    for url in url_list:
-#        executor2.submit(download, url)
