@@ -125,17 +125,13 @@ def makedir(url: str) -> None:
 
 if __name__ == "__main__":
     # Argument parser
-#    parser = argparser.ArgumentParser(description='Download image from e-hentai.org')
-#
-#    parser.add_argument('URL', help='Gallery Home URL') # URL
-#
-#    args = parser.parse_args()
-#    
-#    url = args.URL 
+    parser = argparse.ArgumentParser(description='Download image from e-hentai.org')
 
-    #url = "https://e-hentai.org/g/1337256/eea0d94c8d/"
-    #url = "https://e-hentai.org/g/1337390/150e69cdf4/"
-    url = "https://e-hentai.org/g/1337447/601e8125b0/"
+    parser.add_argument('URL', help='Gallery Home URL') # URL
+
+    args = parser.parse_args()
+    
+    url = args.URL 
 
     homelist = list_home_page(url)    
     
